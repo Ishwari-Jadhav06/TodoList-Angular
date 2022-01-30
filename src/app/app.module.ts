@@ -18,7 +18,6 @@ import { TodolistServiceService } from './todolist-service.service';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
 
  }
 
