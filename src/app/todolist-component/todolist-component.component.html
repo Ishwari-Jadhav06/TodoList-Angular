@@ -1,0 +1,12 @@
+<h2>{{parentData}}</h2>
+    <ul>
+      <li *ngFor="let todoItem of todoList;let i = index;"> {{todoItem.title}} {{todoItem.date }}
+        <button class="btn btn-red" (click)="deleteTodo(i)">
+          X
+        </button>
+      </li>
+    </ul>
+    
+
+    
+
