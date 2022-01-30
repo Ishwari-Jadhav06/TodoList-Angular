@@ -8,7 +8,7 @@ import { TodolistServiceService } from '../todolist-service.service';
   styleUrls: ['./todolist-component.component.css']
 })
 export class TodolistComponentComponent implements OnInit {
- @Input() public parentData: any ;
+ @Input() public parentData: any;
  @Output() public remove = new EventEmitter(); 
   todoList!: TodoItem[];
   constructor(private todoListService: TodolistServiceService) { }
@@ -18,7 +18,7 @@ export class TodolistComponentComponent implements OnInit {
     this.todoList = this.todoListService.getTodoList();
   }
   deleteTodo(id:number){  
-    this.remove.emit(id + ": Index Item Deleted");
+    this.remove.emit(id + " : Index Item Deleted");
     this.todoList = this.todoList.filter((v, i) => i !== id);  
 }
 }

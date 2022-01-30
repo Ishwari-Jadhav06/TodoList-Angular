@@ -1,4 +1,4 @@
-<h2>{{parentData}}</h2>
+<h3>{{parentData}}</h3>
     <ul>
       <li *ngFor="let todoItem of todoList;let i = index;"> {{todoItem.title}} - {{todoItem.date }}
         <button class="btn btn-red" (click)="deleteTodo(i)">

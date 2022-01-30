@@ -11,7 +11,7 @@ export class TodolistServiceService {
   private todoList :TodoItem[] = [
     {
       title: 'Todo Task One',
-      date: '4-2-2022'
+      date: '4-3-2022'
     },
     {
       title: 'Todo Task Two',
